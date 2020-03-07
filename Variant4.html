@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("#but1").click(function() {
+				$("[align='center']").hide();
+			});
+			$("#but2").click(function() {
+				$("[align='center']").show();
+			});
+		});
+	</script>
+  </head>
+  <body> 
+	<button id="but1">Спрятать абзац с align=center</button>
+	<button id="but2">Показать абзац с align=center</button>
+	<h2>Вариант 4</h2>
+	<p>Это обзац без align=center!</p>
+	<p align="center">А вот это абзац с align=center!</p>
+  </body>                         
+</html>
